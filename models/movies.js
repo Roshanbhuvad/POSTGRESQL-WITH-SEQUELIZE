@@ -2,10 +2,7 @@ const movies = (sequelize, DataTypes) => {
   const Movies = sequelize.define("movies", {
     id: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notEmpty: true,
-      },
+      allowNull: true,
     },
   });
 
