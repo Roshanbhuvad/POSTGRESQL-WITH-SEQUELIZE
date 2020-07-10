@@ -20,5 +20,5 @@ Object.keys(models).forEach((key) => {
   }
 });
 
-export { sequelize };
-export default models;
+module.exports = { sequelize };
+module.exports = models;

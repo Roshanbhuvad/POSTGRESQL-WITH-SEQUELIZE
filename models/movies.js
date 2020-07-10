@@ -13,4 +13,4 @@ const movies = (sequelize, DataTypes) => {
   return Movies;
 };
 
-export default movies;
+module.exports = Movies;

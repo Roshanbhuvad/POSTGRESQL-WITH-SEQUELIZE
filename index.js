@@ -1,9 +1,9 @@
-import "dotenv/config";
-import express from "express";
-import cors from "cors";
-import routes from "./routes";
-import models, { sequelize } from "./models";
-
+const dotEnv = require("dotenv");
+const express = require("express");
+const cors = require("cors");
+const routes = require("./routes");
+const { models, sequelize } = require("./models");
+dotEnv.config();
 const app = express();
 
 //Application-level middleware
